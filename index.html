@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Presentación</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/icon.png">
+</head>
+<body>
+
+  <section id="pantalla-inicial">
+    <div class="panel p0">
+      <h1>Maximiliano Hernán Giménez</h1>
+      <h2>Técnico Superior en Desarrollo de Software</h2>
+      <h2>Licenciado en Diagnóstico y Mantenimiento</h2>
+      <button class="btn" id="comenzar">Información</button>
+    </div>
+  </section>
+
+  <section id="pantalla-principal">
+    <div class="panel p1">
+      <div class="container n1" id="trabajos">
+        <h2>Últimos Trabajos</h2>
+      </div>
+
+      <div class="container n2">
+        <h2>Redes Sociales</h2>
+        <div class="cont" style="display: flex; gap: 20px;">
+          <a id="facebook-link" href="https://www.facebook.com/maximilianohernan.gimenez" target="_blank">
+            <div class="container redes nf"></div>
+          </a>
+          <a id="linkedin-link" href="https://www.linkedin.com/in/maximiliano-hernan-gimenez-a08b05192" target="_blank">
+            <div class="container redes nl"></div>
+          </a>
+          <a id="github-link" href="https://github.com/Maximbey" target="_blank">
+            <div class="container redes ng"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="container n3" id="profesional">
+        <h2>Información Personal y Profesional</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="pantalla-trabajos">
+    <button id="trab">
+      <img src="img/back.svg" class="primary" alt="Volver">
+    </button>
+    <div class="panel matriz">
+      <h1>Últimos Trabajos (.ZIP)</h1>
+      <div class="cont">
+        <table>
+          <tr>
+            <td><a id="n10" href="complementos/boxeo.zip" download="boxeo.zip"><div class="container n10"></div></a></td>
+            <td><a id="n11" href="complementos/revolucion.zip" download="revolucion.zip"><div class="container n11"></div></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="pantalla-profesional">
+    <button id="prof">
+      <img src="img/back.svg" class="primary" alt="Volver">
+    </button>
+    <div class="panel">
+      <div class="n33"></div>
+      <h2>Información Personal:</h2>
+      <p><b>Nombre y Apellido:</b> Maximiliano Hernán Giménez</p>
+      <p><b>Fecha de Nacimiento:</b> 5 de diciembre de 1997</p>
+      <p><b>DNI:</b> [Privado]</p>
+      <p><b>CUIL:</b> [Privado]</p>
+      <p><b>Teléfono:</b> +54 9 3774 415531</p>
+      <p><b>Email:</b> maxi-gimenez2015@outlook.com</p>
+      <p><b>Residencia:</b> Curuzú Cuatiá, Corrientes, Argentina</p>
+      <p><b>Dirección:</b> [Privado]</p>
+
+      <h2>Formación Académica:</h2>
+      <p><b>Primaria:</b> Colegio Salesiano "San Rafael I-5" (2001 - 2008)</p>
+      <p><b>Secundaria:</b> Colegio Salesiano "San Rafael I-5" (2009 - 2015)</p>
+      <p><b>Terciario:</b> Instituto Superior de Curuzú Cuatiá (2021 - 2023)</p>
+      <p><b>Título:</b> Técnico Superior en Desarrollo de Software</p>
+      <p><b>Capacitaciones:</b> Secretario Informático</p>
+
+      <h2>Resumen Profesional:</h2>
+      <p>Soy un profesional con formación técnica en desarrollo de software y diagnóstico de equipos. Busco crecer laboralmente en entornos tecnológicos.</p>
+
+      <h2>Habilidades:</h2>
+      <p>* Diagnóstico y Mantenimiento de PC</p>
+      <p>* Java</p>
+      <p>* HTML, CSS, JavaScript, PHP</p>
+      <p>* Unity</p>
+      <p>* MySQL Workbench</p>
+
+      <a href="complementos/curriculum.pdf" download="curriculum.pdf" id="descargar-cv-btn">
+        <button class="btn">Descargar Curriculum Vitae</button>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    // Variables necesarias
+    const comenzar = document.getElementById("comenzar");
+    const trabajos = document.getElementById("trabajos");
+    const profesional = document.getElementById("profesional");
+    const trab = document.getElementById("trab");
+    const prof = document.getElementById("prof");
+
+    const musicaInicio = new Audio('complementos/heroes.mp3');
+    musicaInicio.volume = 0.1;
+    musicaInicio.loop = false;
+
+    comenzar.addEventListener("click", function () {
+      musicaInicio.play();
+      cambiarPantalla("pantalla-inicial", "pantalla-principal");
+    });
+
+    trabajos.addEventListener("click", function () {
+      cambiarPantalla("pantalla-principal", "pantalla-trabajos");
+    });
+
+    profesional.addEventListener("click", function () {
+      cambiarPantalla("pantalla-principal", "pantalla-profesional");
+    });
+
+    trab.addEventListener("click", function () {
+      cambiarPantalla("pantalla-trabajos", "pantalla-principal");
+    });
+
+    prof.addEventListener("click", function () {
+      cambiarPantalla("pantalla-profesional", "pantalla-principal");
+    });
+
+    function cambiarPantalla(entrada, salida) {
+      document.getElementById(entrada).style.display = "none";
+      document.getElementById(salida).style.display = "block";
+    }
+
+    function reproducirSonido(rutaSonido) {
+      const audio = new Audio(rutaSonido);
+      audio.play();
+    }
+
+    function agregarEfectoSonido(elementoId, sonidoHover, sonidoClick) {
+      const elemento = document.getElementById(elementoId);
+      if (elemento) {
+        elemento.addEventListener("mouseover", function () {
+          reproducirSonido(sonidoHover);
+        });
+
+        elemento.addEventListener("click", function () {
+          reproducirSonido(sonidoClick);
+        });
+      }
+    }
+
+    const botones = [
+      "comenzar", "trabajos", "profesional", "trab", "prof",
+      "facebook-link", "linkedin-link", "github-link", "descargar-cv-btn", "n10", "n11"
+    ];
+
+    botones.forEach(id => agregarEfectoSonido(id, "complementos/pasar.mp3", "complementos/click.mp3"));
+  </script>
+
+</body>
+</html>

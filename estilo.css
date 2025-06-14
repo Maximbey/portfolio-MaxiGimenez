@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+body {
+    font-family: 'Rajdhani';
+    background: url(img/fondo.png) center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.panel{
+    position: relative;
+    width: 95%;
+    max-width: 170vh;
+    min-height: 75vh;
+    margin: 50px auto;
+    text-align: center;
+    background:rgba(7, 213, 240, 0.7);
+    padding: 30px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+#pantalla-inicial{
+    display: block;
+}
+
+#pantalla-principal{
+  display: none;
+}
+
+#pantalla-trabajos{
+    display: none;
+  }
+
+#pantalla-profesional{
+    display: none;
+  }
+
+h1{
+    font-family: 'Harlow Solid Italic', cursive, sans-serif;
+    font-size: 50px;
+    color: white;
+    
+}
+
+h2{
+    font-family: 'Harlow Solid Italic', cursive, sans-serif;
+    color:rgb(4, 4, 255);
+    font-size: 30px;
+
+}
+
+p{
+    font-family: 'Times New Roman', cursive, sans-serif;
+    text-align: left;
+    left: 2vw;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    position: relative;
+    
+}
+
+.container{
+    border-radius: 30px;
+    border: 2px solid #000;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    font-size: 150%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.74);
+    position: absolute;
+}
+
+.container:hover{
+    transform: scale(1.05);
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 1vh;
+    width: 100%;
+    height: 80%;
+}
+
+.n1 {
+    width: 100vh;
+    height: 30vh;
+    top: 3vh;
+    left: 3vw;
+    background-image: url(../img/matrix-azul.png);
+    background-position: center center;
+    background-size: cover;
+    transition: background-image 0.3s;
+}
+.n1:hover {
+    background-image: url(../img/matrix-verde.png);
+}
+
+.n2 {
+    width: 100vh;
+    min-height: 35vh;
+    top: 35vh;
+    left: 3vw;
+    background-image: url(../img/corbata.png);
+    background-position: top center;
+    background-size: cover;
+    transition: background-image 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.n2:hover {
+    background-image: url(../img/hit.png);
+}
+
+.n3 {
+    align-items: end;
+    width: 50vh;
+    height: 50vh;
+    top: 3vh;
+    right: 3vw;
+    background-image: url(../img/perfil1.png);
+    background-size: cover;
+    transition: background-image 0.3s;
+}
+.n3:hover {
+    background-image: url(../img/perfil2.png);
+}
+
+.n33 {
+    border-radius: 20%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    width: 50vh;
+    height: 50vh;
+    margin: 0 auto;
+    background-image: url(../img/perfil1.png);
+    background-size: cover;
+}
+
+.n10 {
+    width: 30vh;
+    height: 30vh;
+    background-image: url(../img/win0.png);
+    background-position: center center;
+    background-size: cover;
+    transition: background-image 0.3s;
+    position: relative;
+}
+.n10:hover {
+    background-image: url(../img/win1.png);
+}
+
+
+.n11 {
+    width: 30vh;
+    height: 30vh;
+    background-image: url(../img/historia1.png);
+    background-position: center center;
+    background-size: cover;
+    transition: background-image 0.3s;
+    position: relative;
+}
+.n11:hover {
+    background-image: url(../img/historia.png);
+}
+
+.redes {
+    width: 8vh;
+    height: 8vh;
+    background-position: center center;
+    background-size: cover;
+    transition: background-image 0.3s;
+    position: relative;
+    margin: 10px;
+}
+
+.nf {
+    background-image: url(../img/f.png);
+}
+
+.nl {
+    background-image: url(../img/l.png);
+}
+
+.ng {
+    background-image: url(../img/g.png);
+}
+
+button{
+    background-color: #7566fc;
+    border: none;
+    color:white;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 20px;
+    border-radius: 30px;
+    border-bottom: 4px solid black ;
+}
+button:hover{
+    background-color: #fbff00;
+    border-bottom: 4px solid black;
+    transform: scale(1.05);
+}
+
+.btn-primary{
+        position: fixed;
+        top: 30vw;
+        right: 30vw;
+        background: white;
+        width: 80vx;
+        height: 80vw;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+        
+    }
+
+
+/* Consulta de medios para smartphones */
+@media only screen and (orientation: portrait) {
+    body {
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+
+    h1{
+        font-family: 'Harlow Solid Italic', cursive, sans-serif;
+        font-size: 30px;
+        color: white;
+        
+    }
+    
+    h2{
+        font-family: 'Harlow Solid Italic', cursive, sans-serif;
+        color:rgb(4, 4, 255);
+        font-size: 25px;
+        
+    
+    }
+
+    p{
+        font-size: 22px;
+    }
+
+    .p0{
+        min-height: 30vh;
+    }
+
+    .p1{
+        min-height: 95vh;
+    }
+
+    .n1 {
+        margin: 0 auto;
+        width: 30vh;
+        height: 20vh;
+        top: 35vh;
+        right: 0vw;
+    }
+
+    .n2 {
+        margin: 0 auto;
+        width: 30vh;
+        height: 30vh;
+        top: 60vh;
+        right: 0vw;
+    }
+
+    .n3 {
+        margin: 0 auto;
+        width: 30vh;
+        height: 30vh;
+        left: 4vw;
+    }
+
+    .n10 {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .n11 {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .n33 {
+        width: 30vh;
+        height: 30vh;
+        top: 1vh;
+    }
+
+    .redes{
+        width: 8vh;
+        height: 8vh;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+
+    .n2 {
+        height: 30vh;
+    }
+
+    .p1{
+        min-height: 90vh;
+    }
+
+  }
