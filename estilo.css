@@ -99,13 +99,13 @@ p{
     height: 30vh;
     top: 3vh;
     left: 3vw;
-    background-image: url(../img/matrix-azul.png);
+    background-image: url(img/matrix-azul.png);
     background-position: center center;
     background-size: cover;
     transition: background-image 0.3s;
 }
 .n1:hover {
-    background-image: url(../img/matrix-verde.png);
+    background-image: url(img/matrix-verde.png);
 }
 
 .n2 {
@@ -113,7 +113,7 @@ p{
     min-height: 35vh;
     top: 35vh;
     left: 3vw;
-    background-image: url(../img/corbata.png);
+    background-image: url(img/corbata.png);
     background-position: top center;
     background-size: cover;
     transition: background-image 0.3s;
@@ -127,7 +127,7 @@ p{
 }
 
 .n2:hover {
-    background-image: url(../img/hit.png);
+    background-image: url(img/hit.png);
 }
 
 .n3 {
@@ -136,12 +136,12 @@ p{
     height: 50vh;
     top: 3vh;
     right: 3vw;
-    background-image: url(../img/perfil1.png);
+    background-image: url(img/perfil1.png);
     background-size: cover;
     transition: background-image 0.3s;
 }
 .n3:hover {
-    background-image: url(../img/perfil2.png);
+    background-image: url(img/perfil2.png);
 }
 
 .n33 {
@@ -150,35 +150,35 @@ p{
     width: 50vh;
     height: 50vh;
     margin: 0 auto;
-    background-image: url(../img/perfil1.png);
+    background-image: url(img/perfil1.png);
     background-size: cover;
 }
 
 .n10 {
     width: 30vh;
     height: 30vh;
-    background-image: url(../img/win0.png);
+    background-image: url(img/win0.png);
     background-position: center center;
     background-size: cover;
     transition: background-image 0.3s;
     position: relative;
 }
 .n10:hover {
-    background-image: url(../img/win1.png);
+    background-image: url(img/win1.png);
 }
 
 
 .n11 {
     width: 30vh;
     height: 30vh;
-    background-image: url(../img/historia1.png);
+    background-image: url(img/historia1.png);
     background-position: center center;
     background-size: cover;
     transition: background-image 0.3s;
     position: relative;
 }
 .n11:hover {
-    background-image: url(../img/historia.png);
+    background-image: url(img/historia.png);
 }
 
 .redes {
@@ -192,15 +192,15 @@ p{
 }
 
 .nf {
-    background-image: url(../img/f.png);
+    background-image: url(img/f.png);
 }
 
 .nl {
-    background-image: url(../img/l.png);
+    background-image: url(img/l.png);
 }
 
 .ng {
-    background-image: url(../img/g.png);
+    background-image: url(img/g.png);
 }
 
 button{
