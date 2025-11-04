@@ -181,6 +181,20 @@ p{
     background-image: url(img/historia.png);
 }
 
+.n12 {
+    width: 30vh;
+    height: 30vh;
+    background-image: url(img/gestor_tareas.png);
+    background-position: center center;
+    background-size: cover;
+    transition: background-image 0.3s;
+    position: relative;
+}
+.n12:hover {
+    background-image: url(img/gestor_tareas.png);
+}
+
+
 .redes {
     width: 8vh;
     height: 8vh;
@@ -297,6 +311,11 @@ button:hover{
     }
 
     .n11 {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .n12 {
         width: 20vh;
         height: 20vh;
     }
